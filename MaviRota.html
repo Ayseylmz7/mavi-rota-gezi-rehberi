@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mavi Rota | Gezi Rehberi</title>
+    <!--  Harici CSS Bağlantısı -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="top">
+
+    <div class="container">
+
+        <!-- Sayfa Ana Başlık Alanı -->
+        <header class="sayfa-header">
+            <div class="banner-sag-yazi">Keşfet & Öğren</div>
+            <div class="banner-blok">
+                <h1>Mavi Rota</h1>
+                <p>Yeni yerler, yeni hikâyeler</p>
+                <a href="#rotalar" class="btn-kesfet">Rotaları Keşfet</a>
+            </div>
+        </header>
+
+        <!--  Navigasyon Menüsü -->
+        <nav>
+            <a href="#top">Ana Sayfa</a>
+            <a href="#rotalar">Rotalar</a>
+            <a href="#rehber">Gezi Rehberi</a>
+            <a href="#karsilastirma">Karşılaştırma</a>
+            <a href="#iletisim">İletişim</a>
+        </nav>
+
+        <!-- Main İçerik Alanı  -->
+        <main class="row">
+
+            <!-- SOL ANA İÇERİK ALANI  -->
+            <div class="col-8">
+
+                <!--  POPÜLER ROTALAR -->
+                <section id="rotalar">
+                    <!--  Section içi Header -->
+                    <header class="bolum-header">
+                        <h2>Popüler Rotalar</h2>
+                        <hr class="cizgi cizgi-rotalar">
+                        <p class="bolum-aciklama">
+                            Şehrin kalabalığından uzaklaşın ve yeni yerler keşfedin. Her rota, farklı bir deneyim sunar.
+                        </p>
+                    </header>
+
+                    <!-- (3 x col-4) -->
+                    <div class="row">
+                        <!-- Kart 1: DOĞA -->
+                        <div class="col-4">
+                            <article class="kart">
+                                <div class="resim-kutusu">
+                                    <span class="etiket">DOĞA</span>
+                                    <img src="dagGorseli.jpeg" alt="Dağların İzinde">
+                                </div>
+                                <!--  Article içi Header -->
+                                <header class="kart-header">
+                                    <h4>Dağların İzinde</h4>
+                                </header>
+                                <p>Doğa yürüyüşleri ve eşsiz manzaralarla dolu bir rota.</p>
+                                <div class="sure">Süre: 2 gün</div>
+                                <a href="#">Rotayı İncele </a>
+                            </article>
+                        </div>
+
+                        <!-- Kart 2: SAHİL -->
+                        <div class="col-4">
+                            <article class="kart">
+                                <div class="resim-kutusu">
+                                    <span class="etiket">SAHİL</span>
+                                    <img src="denizGorseli.jpeg" alt="Sahil Kasabaları">
+                                </div>
+                                <header class="kart-header">
+                                    <h4>Sahil Kasabaları</h4>
+                                </header>
+                                <p>Deniz kıyısında sakin sokaklar ve yerel lezzetler.</p>
+                                <div class="sure">Süre: 3 gün</div>
+                                <a href="#">Rotayı İncele </a>
+                            </article>
+                        </div>
+
+                        <!-- Kart 3: KÜLTÜR -->
+                        <div class="col-4">
+                            <article class="kart">
+                                <div class="resim-kutusu">
+                                    <span class="etiket">KÜLTÜR</span>
+                                    <img src="sehırGörseli.jpeg" alt="Tarihin İzleri">
+                                </div>
+                                <header class="kart-header">
+                                    <h4>Tarihin İzleri</h4>
+                                </header>
+                                <p>Tarihi yapılar, müzeler ve eski şehirleri keşfedin.</p>
+                                <div class="sure">Süre: 1 gün</div>
+                                <a href="#">Rotayı İncele </a>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- YOLA ÇIKMADAN ÖNCE -->
+                <section id="rehber" class="bolum-bosluk">
+                    <header class="bolum-header">
+                        <h2>Yola Çıkmadan Önce</h2>
+                        <hr class="cizgi cizgi-rehber">
+                    </header>
+
+                    <img src="yolculukGorseli.jpeg" alt="Yolculuk" class="buyuk-resim">
+
+                    <div class="gri-kutu">
+                        <header>
+                            <h3>Gezi Hazırlık Listesi</h3>
+                        </header>
+                        
+                        <ol>
+                            <li>Gidecek yeri belirleyin</li>
+                            <li>Hava durumunu inceleyin</li>
+                            <li>Yanınıza su ve atıştırmalık bulundurun</li>
+                            <li>Gerekli eşyaları çantanıza yerleştirin</li>
+                        </ol>
+
+                        <hr class="cizgi-farkli">
+
+                        <header>
+                            <h3>Önemli Hatırlatmalar</h3>
+                        </header>
+         
+                        <p class="onemli-uyari">
+                            <mark>Yola çıkmadan önce</mark> rezervasyonlarınızı ve seyahat belgelerinizi kontrol edin.
+                        </p>
+
+                        <p class="not-baslik"><strong>Seyahat notu:</strong></p>
+                        <p class="not-icerik">
+                            Sabah erken saatlerde yola çıkın.<br>
+                            Fotoğraf çekmek için zaman ayırın.
+                        </p>
+
+                       
+                        <p class="plan-baslik">Örnek gezi planı:</p>
+                        <pre>09:00 - Hareket
+12:00 - Öğle molası
+15:00 - Rota keşfi
+18:00 - Konaklama</pre>
+                    </div>
+                </section>
+
+                <!-- ROTALARI KARŞILAŞTIRIN (TABLO) -->
+                <section id="karsilastirma" class="bolum-bosluk bolum-tablo">
+                    <header class="bolum-header">
+                        <h2>Rotaları Karşılaştırın</h2>
+                        <hr class="cizgi cizgi-tablo">
+                    </header>
+
+                    
+                    <table>
+                        <tr>
+                            <th>Rota</th>
+                            <th>Süre</th>
+                            <th>Bütçe</th>
+                            <th>Zorluk</th>
+                        </tr>
+                        <tr>
+                            <td>Dağların İzinde</td>
+                            <td>2 gün</td>
+                            <td>Orta</td>
+                            <td>Yüksek</td>
+                        </tr>
+                        <tr>
+                            <td>Sahil Kasabaları</td>
+                            <td>3 gün</td>
+                            <td>Yüksek</td>
+                            <td>Kolay</td>
+                        </tr>
+                        <tr>
+                            <td>Tarihin İzleri</td>
+                            <td>1 gün</td>
+                            <td>Düşük</td>
+                            <td>Kolay</td>
+                        </tr>
+                        <tr class="tablo-vurgu">
+                            <td colspan="2">En kısa gezi</td>
+                            <td colspan="2">Tarihin İzleri</td>
+                        </tr>
+                    </table>
+                </section>
+
+            </div>
+
+            <!-- SAĞ KENAR ÇUBUĞU  -->
+            <aside class="col-4">
+
+                <!-- Sidebar Kutu 1 -->
+                <section class="sidebar-kutu">
+                    <header>
+                        <h3>Gezi Notları</h3>
+                        <hr class="cizgi cizgi-notlar">
+                    </header>
+                    <p class="sidebar-italik"><em>İyi bir gezi, iyi bir planla başlar.</em></p>
+                  
+                    <ul>
+                        <li>Hava durumunu inceleyin</li>
+                        <li>Yanınıza su alın</li>
+                        <li>Çevreyi temiz tutun</li>
+                    </ul>
+                </section>
+
+                <!-- Sidebar Kutu 2 -->
+                <section class="sidebar-kutu">
+                    <header>
+                        <h3>Haftanın Önerisi</h3>
+                        <hr class="cizgi cizgi-oneri">
+                    </header>
+                    <img src="yedigoller.jpeg" alt="Yedigöller">
+                    <h4 class="oneri-baslik">Yedigöller Gezisi</h4>
+                    <p class="oneri-metin">Sonbaharın renklerini keşfetmek için harika bir fırsat.</p>
+                    <a href="#">Devamını Oku </a>
+                </section>
+
+                <!-- Sidebar Kutu 3 -->
+                <section class="sidebar-kutu" id="iletisim">
+                    <header>
+                        <h3>Bize Ulaşın</h3>
+                        <hr class="cizgi cizgi-iletisim">
+                    </header>
+                    <p class="iletisim-metin">
+                        Rotanız hakkında sorularınız veya önerileriniz için bizimle iletişime geçebilirsiniz.<br><br>
+                        <strong>E-posta:</strong> ayse..lmz@gmail.com
+                    </p>
+                </section>
+
+            </aside>
+
+        </main>
+
+        <!-- Footer-->
+        <footer>
+            <a href="#top">En Başa Dön </a>
+            <p>&copy; 2026 Mavi Rota </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

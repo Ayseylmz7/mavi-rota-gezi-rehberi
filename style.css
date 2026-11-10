@@ -1,0 +1,372 @@
+/* Harici CSS Dosyası*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* Sayfa Kapsayıcısı */
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 12px;
+}
+
+.col-1  { width: 8.33%; }
+.col-2  { width: 16.66%; }
+.col-3  { width: 25%; }
+.col-4  { width: 33.33%; }
+.col-5  { width: 41.66%; }
+.col-6  { width: 50%; }
+.col-7  { width: 58.33%; }
+.col-8  { width: 66.66%; }
+.col-9  { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+
+.sayfa-header {
+    position: relative;
+    background-color: #1e3c72;
+    background-image: url('denizGorseli.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 50px 30px;
+}
+
+.banner-blok {
+    background-color: rgba(30, 60, 114, 0.88);
+    width: 320px;
+    padding: 22px;
+    border-radius: 4px;
+}
+
+.banner-blok h1 {
+    font-size: 26px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.banner-blok p {
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.btn-kesfet {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #1e3c72;
+    padding: 7px 16px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.banner-sag-yazi {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 5px 10px;
+}
+
+/* Navigasyon */
+nav {
+    background-color: #2b5876;
+    padding: 10px 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background-color: #1e3c72;
+}
+
+/*  Başlık Çizgileri */
+.cizgi {
+    height: 3px;
+    background-color: #2b5876;
+    border: none;
+    margin-top: 6px;
+    margin-bottom: 14px;
+}
+
+/* Başlık genişlikleri */
+.cizgi-rotalar { width: 140px; }
+.cizgi-rehber  { width: 180px; }
+.cizgi-tablo   { width: 190px; }
+.cizgi-notlar  { width: 100px; }
+.cizgi-oneri   { width: 130px; }
+.cizgi-iletisim{ width: 95px; }
+
+/* kesikli çizgi */
+.cizgi-farkli {
+    border: none;
+    border-top: 1px dashed #999999;
+    margin: 18px 0;
+}
+
+/* Bölüm Başlık ve Açıklamaları */
+.bolum-bosluk {
+    margin-top: 25px;
+}
+
+.bolum-aciklama {
+    font-size: 13px;
+    color: #555555;
+    margin-bottom: 12px;
+}
+
+/* Kartlar ve Resim Üzeri Etiketler */
+.kart {
+    border: 1px solid #e1e4e8;
+    background-color: #fafafa;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+.resim-kutusu {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.resim-kutusu img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.etiket {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #ffffff;
+    padding: 2px 7px;
+    font-size: 11px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.kart-header h4 {
+    font-size: 15px;
+    margin-bottom: 4px;
+    color: #1e3c72;
+}
+
+.kart p {
+    font-size: 12px;
+    color: #555555;
+    margin-bottom: 6px;
+}
+
+.kart .sure {
+    font-size: 11px;
+    color: #777777;
+    margin-bottom: 8px;
+}
+
+.kart a, .sidebar-kutu a {
+    color: #2b5876;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Rehber Bölümü */
+.buyuk-resim {
+    width: 100%;
+    max-height: 260px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.gri-kutu {
+    background-color: #f7f9fa;
+    border: 1px solid #e1e4e8;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.gri-kutu h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.onemli-uyari {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.not-baslik {
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.not-icerik {
+    font-size: 13px;
+    color: #555555;
+}
+
+.plan-baslik {
+    font-size: 13px;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+/* Listeler */
+ol, ul {
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+ol li, ul li {
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+
+pre {
+    background-color: #edf2f7;
+    padding: 10px;
+    border-left: 3px solid #2b5876;
+    font-family: Courier, monospace;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+
+.bolum-tablo {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #d0d7de;
+    padding: 8px 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2b5876;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.tablo-vurgu {
+    font-weight: bold;
+    background-color: #eef2f5;
+}
+
+/* Kenar Çubuğu  */
+.sidebar-kutu {
+    border: 1px solid #e1e4e8;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.sidebar-kutu img {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+
+.sidebar-italik {
+    font-size: 13px;
+    color: #555555;
+    margin-bottom: 8px;
+}
+
+.oneri-baslik {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #1e3c72;
+}
+
+.oneri-metin, .iletisim-metin {
+    font-size: 12px;
+    color: #555555;
+    margin-bottom: 8px;
+}
+
+.iletisim-metin {
+    font-size: 13px;
+}
+
+/* Footer */
+footer {
+    background-color: #2b5876;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    .banner-blok {
+        width: 100%;
+    }
+    .banner-sag-yazi {
+        position: static;
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
